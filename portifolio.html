@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        
+        /* Colocamos o modelo de formatação do site em grid*/
+        .container {
+            display: grid;
+        }
+
+        /* alinhamos o texto em nosso site e mudamos o tipo da letra*/
+        body {
+            margin: 0;
+            text-align: justify;
+            font-family: sans-serif;
+        }
+
+        /* alinhamos nosso cabeçalho conforme o grid, tranformamos o texto e mudamos a cor*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            background-color: #646267;
+            color: white;
+            text-transform: uppercase;
+            width: auto;
+        }
+
+        /*centralizamos os links na pagina*/
+        nav {
+            justify-content: center;
+        }
+
+         /* mudamos a cor de fundo e a cor da letra quando colocamos o mouse sobre o link*/
+         a:hover {
+            background-color: #646267;
+            color: white;
+        }
+
+        /* retiramos o pontos do tipo lista*/
+        ul{
+            list-style-type: none;            
+        }
+
+        /* alinhamos os links da esquerda para a direita*/
+        li {
+            float: left;
+        }
+
+        /* removemos o sublinhado, adicionamos espaçamento e alinhamento dos links considerando usabilidade em outros dispositivos*/
+        a, a:link {
+            text-decoration: none;
+            padding: 8px 8px;        
+            border: 1px solid #646267;
+            width: auto;
+            display: inline-block;  
+        }
+
+        /* colocamos um limite onde nosso texto deve ser exibido*/
+        main {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        /* estilizamos o lugar onde nosso texto está inserido com borda, e sombreamento*/
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #646267;
+        }
+
+        /* estilizamos nosso rodapé, fixamos para que movimente com a página e colocamos o texto centralizado em relação ao tamanho do rodapé */
+        footer {
+            justify-content: center;
+            background-color: #646267;
+            color: white;
+            position: fixed;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* deixamos o alinhamento para que o nosso texto seja uma lista*/
+        div > li {
+            float: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="container"> 
+        <h1>Portifólio</h1>
+    </header>
+
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="formacao.html">Formação Acadêmica</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li></li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>          
+         
+        </section>
+
+        
+       
+        
+    </main>
+
+    <footer class="container"> &copy; 2024 Portifólio de Helison S. Rosa. Todos os direitos reservados. </footer>
+</body>
+</html>
+
+    
