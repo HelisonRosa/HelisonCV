@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        
+        /* Colocamos o modelo de formatação do site em grid*/
+        .container {
+            display: grid;
+        }
+
+        /* alinhamos o texto em nosso site e mudamos o tipo da letra*/
+        body {
+            margin: 0;
+            text-align: justify;
+            font-family: sans-serif;
+        }
+
+        /* alinhamos nosso cabeçalho conforme o grid, tranformamos o texto e mudamos a cor*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            background-color: #646267;
+            color: white;
+            text-transform: uppercase;
+            width: auto;
+        }
+
+        /*centralizamos os links na pagina*/
+        nav {
+            justify-content: center;
+        }
+
+        /* retiramos o pontos do tipo lista*/
+        ul{
+            list-style-type: none;            
+        }
+
+        /* alinhamos os links da esquerda para a direita*/
+        li {
+            float: left;
+        }
+
+        /* removemos o sublinhado, adicionamos espaçamento e alinhamento dos links considerando usabilidade em outros dispositivos*/
+        .link1 {
+            color: black;
+            text-decoration: none;
+            padding: 8px 8px;        
+            border: 1px solid #646267;
+            width: auto;
+            display: inline-block;  
+        }
+
+         /* mudamos a cor de fundo e a cor da letra quando colocamos o mouse sobre o link*/
+         .link1:hover {
+            background-color: #646267;
+            color: white;
+        }
+
+        .link2 {
+            color: black;
+            text-decoration: none;
+            padding: 8px 8px;
+            width: auto;
+            display: inline-block;  
+        }
+
+         /*mantemos a cor do link original sem contraste com a cor de fundo*/
+         .link2:hover {
+            background-color: white;
+        }
+
+        /* colocamos um limite onde nosso texto deve ser exibido*/
+        main {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        /* estilizamos o lugar onde nosso texto está inserido com borda, e sombreamento*/
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #646267;
+        }
+
+        /* estilizamos nosso rodapé, fixamos para que movimente com a página e colocamos o texto centralizado em relação ao tamanho do rodapé */
+        footer {
+            justify-content: center;
+            background-color: #646267;
+            color: white;
+            position: fixed;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button[type="whatsapp"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .img{
+            display: block;
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-right: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        input[type="texto"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        button[type="enviar"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button[type="enviar"]:hover {
+            background-color: #45a049;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <header class="container"> 
+        <h1>Contato</h1>
+    </header>
+
+    <nav class="container">
+        <ul>
+            <li><a href="index.html" class="link1">Biografia</a></li>
+            <li><a href="formacao.html" class="link1">Formação Acadêmica</a></li>
+            <li><a href="portifolio.html" class="link1">Portifólio</a></li>
+            <li><a href="contato.html" class="link1">Contato</a></li>
+        </ul>
+    </nav>    
+    
+</head>
+<body>
+
+    <main>
+
+        <section>
+            <h1>Whatsapp: <a href="https://wa.me/41992733689" class="link2"><button type="whatsapp">(41)9 9273-3689</button></a></h1>
+
+            <img src="whatsapp.jpg" alt="whatsapp" class="img">
+    
+        </section>
+
+        <section>
+            <h1 class="container" >Envie-me um Email...</h1>
+
+            <form action="Email">
+                <label for="nome">Nome:</label>
+                <input type="texto" id="nome" name="nome" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="assunto">Assunto:</label>
+                <input type="texto" id="assunto" name="assunto">
+            
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+                <button type="enviar">Enviar</button>
+            </form>
+    
+        </section>
+
+        <br><br>br
+
+    </main>
+    
+    
+
+    <footer class="container"> &copy; 2024 Formação acadêmia de Helison S. Rosa. Todos os direitos reservados. </footer>
+</body>
+</html>
+
+    
