@@ -74,6 +74,18 @@
             box-shadow: 0 2px 5px #646267;
         }
 
+        .imgcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        .imgcontainer img{
+            width: 80%;
+            height: auto;
+        }
+
         /* estilizamos nosso rodapé, fixamos para que movimente com a página e colocamos o texto centralizado em relação ao tamanho do rodapé */
         footer {
             justify-content: center;
@@ -83,11 +95,6 @@
             padding: 10px;
             bottom: 0;
             width: 100%;
-        }
-        
-        /* deixamos o alinhamento para que o nosso texto seja uma lista*/
-        div > li {
-            float: none;
         }
 
     </style>
@@ -107,14 +114,24 @@
     </nav>
 
     <main>
-        <section>          
-         
+        <section class="imgcontainer">
+            <img src="Imagem Responsiva.png" alt="Imagem Responsiva" title="Imagem Responsiva" class="img">
+        </section>
+
+        <section class="imgcontainer">
+            <img src="Media Query.png" alt="Media Query" title="Media Query" class="img">
+        </section>
+
+        <section class="imgcontainer">
+            <img src="Biografia Leonardo Da Vinci.png" alt="Biografia Leonardo Da Vince" title="Biografia Leonardo Da Vince" class="img">
         </section>
 
         
        
         
     </main>
+
+    <br><br>
 
     <footer class="container"> &copy; 2024 Portifólio de Helison S. Rosa. Todos os direitos reservados. </footer>
 </body>
